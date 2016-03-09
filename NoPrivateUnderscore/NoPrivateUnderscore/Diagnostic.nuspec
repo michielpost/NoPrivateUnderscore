@@ -1,0 +1,23 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>NoPrivateUnderscore</id>
+    <version>1.0.0</version>
+    <title>NoPrivateUnderscore</title>
+    <authors>Michiel</authors>
+    <owners>Michiel</owners>
+    <projectUrl>https://github.com/michielpost/NoPrivateUnderscore</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Roslyn Analyzer that returns an error and code fix for private fields that start with an underscore.</description>
+    <copyright>Copyright 2016</copyright>
+    <tags>roslyn, analyzers, underscore</tags>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System" targetFramework="" />
+    </frameworkAssemblies>
+  </metadata>
+  <!-- The convention for analyzers is to put language agnostic dlls in analyzers\portable50 and language specific analyzers in either analyzers\portable50\cs or analyzers\portable50\vb -->
+  <files>
+    <file src="*.dll" target="analyzers\dotnet\cs" exclude="**\Microsoft.CodeAnalysis.*;**\System.Collections.Immutable.*;**\System.Reflection.Metadata.*;**\System.Composition.*" />
+    <file src="tools\*.ps1" target="tools\" />
+  </files>
+</package>

@@ -2,3 +2,9 @@
 Roslyn analyzer that returns an error for private fields that start with an underscore
 
 Personally I like starting private fields with an underscore, but for one of the projects I'm working on it's against the coding guidelines.
+
+Example:  
+`private string _myString`
+
+Will be renamed to:  
+`private string myString` 

@@ -1,4 +1,3 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/4yllghl99yr1e4yi?svg=true)](https://ci.appveyor.com/project/michielpost/noprivateunderscore)
 # NoPrivateUnderscore
 Roslyn analyzer that returns an error for private fields that start with an underscore
 
